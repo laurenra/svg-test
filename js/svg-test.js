@@ -91,3 +91,4 @@ class Lyrics {
  */
 const myLyrics = new Lyrics();
 console.info("Instianted myLyrics object of Lyrics class...");
+//# sourceMappingURL=svg-test.js.map
