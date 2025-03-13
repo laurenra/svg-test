@@ -15,9 +15,7 @@ index.html
 css/style.css
 js/svg-test.js
 favicon.ico
-icon.png
 icon.svg
-site.webmanifest
 ```
 
 ## Customize and Build project
