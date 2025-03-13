@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- Add your site or application content here -->
+
+  <div class="container-main">
+    <div class="svg-area">
+
+      <!-- SVG Circle -->
+      <svg width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+        <!--    <circle id="circle1" cx="50" cy="50" r="25" style="fill:red;" onclick="myLyrics.svgAlertCircle()" />-->
+        <circle id="circle1" cx="60" cy="60" r="50" fill="red" onclick="myLyrics.svgCircle()" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <!-- SVG polygon - triangle -->
+      <svg height="220" width="200" xmlns="http://www.w3.org/2000/svg">
+        <!--    <polygon id="triangle1" points="100,10 150,190 50,190" style="fill:lime;stroke:purple;stroke-width:3" onclick="myLyrics.svgAlertTriangle()" />-->
+        <polygon id="triangle1" points="100,10 150,190 50,190" fill="lime" style="stroke:purple;stroke-width:3" onclick="myLyrics.svgTriangle()" />
+      </svg>
+
+      <!-- SVG polygon - hexagon -->
+      <svg height="280" width="360" xmlns="http://www.w3.org/2000/svg">
+        <!--    <polygon id="hexagon1" points="150,15 258,77 258,202 150,265 42,202 42,77" style="fill:orchid;stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon1')" />-->
+        <polygon id="hexagon1" points="150,15 258,77 258,202 150,265 42,202 42,77" fill="orchid" style="stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon1')" />
+      </svg>
+
+      <!-- SVG polygon - star -->
+      <svg height="210" width="240" xmlns="http://www.w3.org/2000/svg">
+        <!--    <polygon id="star1" points="100,10 40,198 190,78 10,78 160,198" style="fill:coral;stroke:green;stroke-width:5;fill-rule:evenodd;" onclick="myLyrics.svgStar()" />-->
+        <polygon id="star1" points="100,10 40,198 190,78 10,78 160,198" fill="coral" style="stroke:green;stroke-width:5;fill-rule:evenodd;" onclick="myLyrics.svgStar()" />
+      </svg>
+
+    </div>
+
+    <div>
+      <!-- SVG polygon - hexagon -->
+      <svg height="280" width="360" xmlns="http://www.w3.org/2000/svg">
+        <!--    <polygon id="hexagon2" points="150,15 258,77 258,202 150,265 42,202 42,77" style="fill:orchid;stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon2')" />-->
+        <polygon id="hexagon2" points="150,15 258,77 258,202 150,265 42,202 42,77" fill="orchid" style="stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon2')" />
+      </svg>
+    </div>
+
+    <div class="container-lyrics-greenscreen" id="lyricsDisplay">
+      <!-- SVG polygon - hexagon -->
+      <svg height="280" width="360" xmlns="http://www.w3.org/2000/svg">
+        <!--    <polygon id="hexagon3" points="150,15 258,77 258,202 150,265 42,202 42,77" style="fill:orchid;stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon3')" />-->
+        <polygon id="hexagon3" points="150,15 258,77 258,202 150,265 42,202 42,77" fill="orchid" style="stroke:blue;stroke-width:3" onclick="myLyrics.svgHexagon('hexagon3')" />
+      </svg>
+    </div>
+  </div>
+  <script src="js/svg-test.js"></script>
+
+</body>
+
+</html>
