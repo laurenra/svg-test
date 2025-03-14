@@ -2,11 +2,24 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    app: './js/svg-test.js',
+    app: './src/ts/svg-test.ts',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: '/node_modules/'
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
-    filename: '[name].js',
+    clean: true
   },
+  stats: 'none'
 };

@@ -8,14 +8,12 @@ Show different SVGs that respond to clicks inside each one.
 Open **index.html** in a browser. Click on the different SVG images to see 
 what they do (change color).
 
-You only need these files to run this:
+You only need these files in the /dist directory to run this:
 
 ```shell
-index.html
 css/style.css
-js/svg-test.js
-favicon.ico
-icon.svg
+index.html
+main.js
 ```
 
 ### Mendix investigation
@@ -51,7 +49,8 @@ npm install
 ```
 
 Then compile the modified **svg-test.ts** TypeScript file into the 
-JavaScript file, **js/svg-test.ts** that's used by index.html.
+JavaScript file, **/dist/main.js** that's used by index.html with 
+**'npm run build'**.
 
 ```sh
 npm run build
@@ -73,7 +72,34 @@ npm run dev
 ```
 
 ### Compile and Minify for Production
+This compiles files in /src and copies them to /dist. View the compiled 
+/dist/index.html in a browser.
 
 ```sh
 npm run build
 ```
+
+## Troubleshooting
+
+### Webpack
+See also:
+
+[What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+
+[Webpack - Getting Started](https://webpack.js.org/guides/getting-started/#basic-setup)
+
+[Webpack - Typescript](https://webpack.js.org/guides/typescript/)
+
+[Webpack - HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+
+[Webpack - CopyWebpackPlugin](https://webpack.js.org/plugins/copy-webpack-plugin/)
+
+[How to set up Webpack + TypeScript + SCSS to create a simple front-end in a modern way](https://medium.com/@coder_in_austria/how-to-set-up-webpack-typescript-scss-to-create-a-simple-front-end-in-a-modern-way-86850ee3f1c6)
+
+[How to Use the Copy Webpack Plugin](https://www.squash.io/how-to-use-the-copy-webpack-plugin/)
+
+#### Versions
+`npx webpack --version`
+
+#### Help
+`npx webpack --help`

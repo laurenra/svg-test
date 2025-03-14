@@ -20,6 +20,9 @@
  * TODO: what happens if someone enters number out of range? Does it reset to max or min? Or do I have to do that?
  * TODO: Up down arrow keys move to previous and next lines
  */
+
+// require('../css/style.css')
+
 class Lyrics {
 
   private isShowLyrics: boolean;
@@ -100,5 +103,5 @@ class Lyrics {
  */
 
 const myLyrics = new Lyrics();
-console.info("Instianted myLyrics object of Lyrics class...");
+console.info("Instantiated myLyrics asdif of Lyrics class...");
 
