@@ -2,6 +2,8 @@
 
 Show different SVGs that respond to clicks inside each one.
 
+[See a demo here](https://laurenra.github.io/svg-test/).
+
 ## How to run it
 
 The simplest way to run this is to download **svg-test.zip** from the latest 
@@ -84,6 +86,30 @@ This compiles files in /src and copies them to /dist. View the compiled
 ```sh
 npm run build
 ```
+
+### Publish demo on GitHub Pages 
+This compiles the files and publishes the ones in /dist to GitHub Pages to see 
+a demo. You can [see the demo page here](https://laurenra.github.io/svg-test/).
+
+```sh
+npm run deploy
+```
+
+When you run the **deploy** script, it automatically runs the **predeploy** 
+script first.
+
+The **predeploy** script in package.json compiles the files in /src and copies 
+them to /dist.
+
+The **deploy** script copies the files in /dist to the root of the **gh-pages** branch 
+and pushes the branch to GitHub.
+
+[GitHub Pages](https://docs.github.com/en/pages) is 
+[configured](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) 
+to use the files in the root of the gh-pages branch.
+
+Tutorial: [Deploying to GitHub Pages using gh-pages](https://dev.to/scc33/deploying-to-github-pages-using-gh-pages-2d95)
+
 
 ## Troubleshooting
 
