@@ -5,9 +5,6 @@ Show different SVGs that respond to clicks inside each one.
 ## Usage
 
 ### In a Browser
-Open **index.html** in a browser. Click on the different SVG images to see 
-what they do (change color).
-
 You only need these files in the /dist directory to run this:
 
 ```shell
@@ -15,6 +12,8 @@ css/style.css
 index.html
 main.js
 ```
+Open **index.html** in a browser. Click on the different SVG images to see
+toggle a color change.
 
 ### Mendix investigation
 
@@ -66,6 +65,8 @@ npm install
 ```
 
 ### Compile and Hot-Reload for Development
+TODO: get this to work so it watches for changes to the CSS (or SASS), TypeScript 
+source, or index.html and recompiles and redeploys on port 9000.
 
 ```sh
 npm run dev
