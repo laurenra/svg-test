@@ -2,16 +2,15 @@
 
 Show different SVGs that respond to clicks inside each one.
 
-## Usage
+## How to run it
 
 The simplest way to run this is to download **svg-test.zip** from the latest 
 release (to the right) and open **index.html** in a browser. Click on the SVG 
 images to toggle a color change.
 
-### In a Browser
-The file, **svg-test.zip**, is just a copy of the **/dist** directory. It has 
-all the files needed to run it, including icons and other fluff, but the 
-essential files are just these:
+The file, **svg-test.zip**, is just a copy of the **/dist** directory in the 
+project. It has all the files needed to run it, including icons and other fluff, 
+but the essential files are just these:
 
 ```shell
 css/style.css
@@ -40,27 +39,29 @@ an interactive floorplant.
 
 ## Customize and Build project
 
-If you make changes to the **src/ts/svg-test.ts** TypeScript file, they must be 
-compiled into the **main.js** JavaScript file, which is the code that 
-**index.html** uses in the **/dist** directory. To be able to compile, you'll 
-need [Node.js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
-installed first to run the following in the project root directory to install 
-the dependencies.
+If you clone the project and make changes to the **src/ts/svg-test.ts** 
+TypeScript file, they must be compiled into the **main.js** JavaScript file, 
+which is the code that **index.html** uses in the **/dist** directory. To be 
+able to compile, you'll need 
+[Node.js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
+installed first.
+
+Run the following in the project root directory to install the dependencies 
+to be able to compile.
 
 ```sh
 npm install
 ```
 
-Then compile the modified **svg-test.ts** TypeScript file into the 
-JavaScript file, **/dist/main.js** that's used by index.html with 
-**'npm run build'**.
+Compiled files are in the **/dist** directory. To compile **svg-test.ts** into 
+the JavaScript file, **main.js**, used by **index.html**: 
 
 ```sh
 npm run build
 ```
 
-Changes to **index.html** and **css/style.css** take effect immediately. You don't 
-need to compile anything.
+This also copies other files to /dist for test, like **index.html** and 
+**css/style.css**.
 
 ## Project Setup
 
