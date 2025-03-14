@@ -4,16 +4,20 @@ Show different SVGs that respond to clicks inside each one.
 
 ## Usage
 
+The simplest way to run this is to download **svg-test.zip** from the latest 
+release (to the right) and open **index.html** in a browser. Click on the SVG 
+images to toggle a color change.
+
 ### In a Browser
-You only need these files in the /dist directory to run this:
+The file, **svg-test.zip**, is just a copy of the **/dist** directory. It has 
+all the files needed to run it, including icons and other fluff, but the 
+essential files are just these:
 
 ```shell
 css/style.css
 index.html
 main.js
 ```
-Open **index.html** in a browser. Click on the different SVG images to toggle 
-a color change.
 
 ### Mendix investigation
 
