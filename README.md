@@ -12,8 +12,8 @@ css/style.css
 index.html
 main.js
 ```
-Open **index.html** in a browser. Click on the different SVG images to see
-toggle a color change.
+Open **index.html** in a browser. Click on the different SVG images to toggle 
+a color change.
 
 ### Mendix investigation
 
