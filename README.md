@@ -32,7 +32,7 @@ There is a Mendix widget that looks like it sort of does this.
 [React Image Mapper](https://marketplace.mendix.com/link/component/235635).
 
 There is a video on Twitch from some Mendix developers showing how they built 
-an interactive floorplant.
+an interactive floorplan.
 
 [Using Interactive Floorplans to Improve Customer Experience](https://www.twitch.tv/videos/1302068683)
 
