@@ -36,10 +36,10 @@ an interactive floorplant.
 
 ## Customize and Build project
 
-If you make changes to the **src/ts/svg-test.ts** TypeScript file, 
-they must be compiled into the **js/svg-test.js** JavaScript file, 
-which is the code that **index.html** uses. To be able to compile, you'll need 
-[Node.js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
+If you make changes to the **src/ts/svg-test.ts** TypeScript file, they must be 
+compiled into the **main.js** JavaScript file, which is the code that 
+**index.html** uses in the **/dist** directory. To be able to compile, you'll 
+need [Node.js and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) 
 installed first to run the following in the project root directory to install 
 the dependencies.
 
