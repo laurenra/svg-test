@@ -91,5 +91,8 @@ document.getElementById('star1')?.addEventListener('click', svgtest.svgStar);
 document.getElementById('hexagon2')?.addEventListener('click', function() {
   svgtest.svgHexagon('hexagon2')
 });
-console.info("Instantiated myLyrics asdif of Lyrics class...");
+document.getElementById('hexagon3')?.addEventListener('click', function() {
+  svgtest.svgHexagon('hexagon3')
+});
+console.info("svg-test page is loaded...");
 
