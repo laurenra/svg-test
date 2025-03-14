@@ -82,14 +82,5 @@ class SvgTest {
  */
 
 const svgtest = new SvgTest();
-document.getElementById('circle1')?.addEventListener('click', svgtest.svgCircle);
-document.getElementById('triangle1')?.addEventListener('click', svgtest.svgTriangle);
-document.getElementById('hexagon1')?.addEventListener('click', function() {
-  svgtest.svgHexagon('hexagon1')
-});
-document.getElementById('star1')?.addEventListener('click', svgtest.svgStar);
-document.getElementById('hexagon2')?.addEventListener('click', function() {
-  svgtest.svgHexagon('hexagon2')
-});
 console.info("Instantiated myLyrics asdif of Lyrics class...");
 

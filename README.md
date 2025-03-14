@@ -98,6 +98,20 @@ See also:
 
 [How to Use the Copy Webpack Plugin](https://www.squash.io/how-to-use-the-copy-webpack-plugin/)
 
+#### Webpack doesn't create global variables
+You can't directly access functions or class methods in the generated 
+Javascript, main.js, directly from index.html, for example, in an onclick 
+event, because it's not defined with global scope. Webpack doesn't generate 
+variables with global scope. To use the functions or class methods as 
+onclick event handlers, add event listeners to the elements. For example:
+
+```javascript
+document.getElementById('triangle1')?.addEventListener('click', svgtest.svgTriangle);
+document.getElementById('hexagon1')?.addEventListener('click', function() {
+  svgtest.svgHexagon('hexagon1')
+});
+```
+
 #### Versions
 `npx webpack --version`
 

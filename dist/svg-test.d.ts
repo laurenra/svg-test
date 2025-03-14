@@ -1,5 +1,5 @@
-declare class Lyrics {
-    private isShowLyrics;
+declare class SvgTest {
+    private isShowSvg;
     private fileLocation;
     constructor();
     setDefaults(): void;
@@ -8,4 +8,4 @@ declare class Lyrics {
     svgHexagon(objectId: string): void;
     svgStar(): void;
 }
-declare const myLyrics: Lyrics;
+declare const svgtest: SvgTest;

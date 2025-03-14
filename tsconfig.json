@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "module": "commonjs",
+    "module": "es2015",
     "target": "es2016",
     "sourceMap": true,
     "removeComments": true,
@@ -13,5 +13,8 @@
   },
   "include": [
     "src/ts/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -10,6 +10,7 @@ module.exports = {
         main: ENTRY_PATH
     },
     output: {
+        library: 'svga',
         path: DIST_PATH,
         filename: '[name].js',
         clean: true
@@ -36,7 +37,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/index.html'
+            template: 'src/index.html',
+            filename: 'index.html'
         }),
         new CopyPlugin({
             patterns: [
@@ -50,7 +52,7 @@ module.exports = {
             ]
         })
     ],
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     stats: 'normal',
-    mode: 'development'
+    mode: 'production'
 };

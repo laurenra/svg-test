@@ -2,21 +2,8 @@
  * SVG click handlers
  */
 
-class SvgTest {
 
-  private isShowSvg: boolean;
-  private fileLocation: string;
-
-  constructor() {
-    this.isShowSvg = false;
-    this.fileLocation = "";
-  }
-
-  setDefaults() {
-    this.isShowSvg = false;
-  }
-
-  svgCircle() {
+function svgCircle() {
     const thisSvg = document.getElementById("circle1");
     if (thisSvg) {
       const styleFillColor = getComputedStyle(thisSvg).fill;
@@ -29,9 +16,9 @@ class SvgTest {
       }
     }
     // alert("You clicked the circle");
-  }
+ }
 
-  svgTriangle() {
+function svgTriangle() {
     const thisSvg = document.getElementById("triangle1");
     if (thisSvg) {
       const styleFillColor = getComputedStyle(thisSvg).fill;
@@ -44,9 +31,9 @@ class SvgTest {
       }
     }
     // alert("You clicked the triangle");
-  }
+ }
 
-  svgHexagon(objectId: string) {
+function svgHexagon(objectId: string) {
     const thisSvg = document.getElementById(objectId);
     if (thisSvg) {
       const styleFillColor = getComputedStyle(thisSvg).fill;
@@ -59,9 +46,9 @@ class SvgTest {
       }
     }
     // alert("You clicked the hexagon");
-  }
+ }
 
-  svgStar() {
+function svgStar() {
     const thisSvg = document.getElementById("star1");
     if (thisSvg) {
       const styleFillColor = getComputedStyle(thisSvg).fill;
@@ -74,22 +61,5 @@ class SvgTest {
       }
     }
     // alert("You clicked the star");
-  }
 }
-
-/**
- * Begin Program
- */
-
-const svgtest = new SvgTest();
-document.getElementById('circle1')?.addEventListener('click', svgtest.svgCircle);
-document.getElementById('triangle1')?.addEventListener('click', svgtest.svgTriangle);
-document.getElementById('hexagon1')?.addEventListener('click', function() {
-  svgtest.svgHexagon('hexagon1')
-});
-document.getElementById('star1')?.addEventListener('click', svgtest.svgStar);
-document.getElementById('hexagon2')?.addEventListener('click', function() {
-  svgtest.svgHexagon('hexagon2')
-});
-console.info("Instantiated myLyrics asdif of Lyrics class...");
 
