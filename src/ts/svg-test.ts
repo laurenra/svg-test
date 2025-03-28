@@ -23,8 +23,7 @@ class SvgTest {
       let fillColor = thisSvg.getAttribute('fill');
       if (fillColor == 'red') {
         thisSvg.setAttribute('fill', 'green');
-      }
-      else {
+      } else {
         thisSvg.setAttribute('fill', 'red');
       }
     }
@@ -38,8 +37,7 @@ class SvgTest {
       let fillColor = thisSvg.getAttribute('fill');
       if (fillColor == 'lime') {
         thisSvg.setAttribute('fill', 'lightskyblue');
-      }
-      else {
+      } else {
         thisSvg.setAttribute('fill', 'lime');
       }
     }
@@ -53,8 +51,7 @@ class SvgTest {
       let fillColor = thisSvg.getAttribute('fill');
       if (fillColor == 'orchid') {
         thisSvg.setAttribute('fill', 'aqua');
-      }
-      else {
+      } else {
         thisSvg.setAttribute('fill', 'orchid');
       }
     }
@@ -68,16 +65,35 @@ class SvgTest {
       let fillColor = thisSvg.getAttribute('fill');
       if (fillColor == 'coral') {
         thisSvg.setAttribute('fill', 'yellow');
-      }
-      else {
+      } else {
         thisSvg.setAttribute('fill', 'coral');
       }
     }
     // alert("You clicked the star");
   }
+
+  svgCountry(countryId: string) {
+    const thisSvg = document.getElementById(countryId);
+    if (thisSvg) {
+      const testit = 'test';
+      const styleFillColor = getComputedStyle(thisSvg).fill;
+      let fillColor = thisSvg.getAttribute('fill');
+      // const myColor = getComputedStyle(thisSvg).getPropertyValue('fill');
+      console.log('klickd ' + countryId);
+      thisSvg.setAttribute('fill', 'orange');
+
+      // if (fillColor == 'orchid') {
+      //   thisSvg.setAttribute('fill', 'aqua');
+      // } else {
+      //   thisSvg.setAttribute('fill', 'orchid');
+      // }
+    }
+    // alert("You clicked " + countryId);
+  }
+
 }
 
-/**
+  /**
  * Begin Program
  */
 
@@ -93,6 +109,9 @@ document.getElementById('hexagon2')?.addEventListener('click', function() {
 });
 document.getElementById('hexagon3')?.addEventListener('click', function() {
   svgtest.svgHexagon('hexagon3')
+});
+document.getElementById('Marokko')?.addEventListener('click', function() {
+  svgtest.svgCountry('Marokko')
 });
 console.info("svg-test page is loaded...");
 

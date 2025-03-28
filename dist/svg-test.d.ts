@@ -7,5 +7,6 @@ declare class SvgTest {
     svgTriangle(): void;
     svgHexagon(objectId: string): void;
     svgStar(): void;
+    svgCountry(countryId: string): void;
 }
 declare const svgtest: SvgTest;
