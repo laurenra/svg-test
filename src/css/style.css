@@ -43,14 +43,31 @@
   line-height: 90pt;
 }
 
-/*#circleFillStyle {*/
-/*  border: 1px solid blue;*/
-/*}*/
+/*
+ * Floor layout styles
+ */
+.outer-walls-stroke {
+  stroke: black;
+  fill: pink;
+}
+.outer-walls-fill {
+  stroke: black;
+  fill: white;
+}
+
+.room-stroke {
+  stroke: black;
+  fill: green;
+}
+.room-fill {
+  stroke: black;
+  fill: lightcyan;
+}
+
 
 /*
  * Country styles
  */
-
 #Marokko {
   fill: darkmagenta;
 }

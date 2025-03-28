@@ -9,6 +9,7 @@ class SvgTest {
   private circleFillAttrRGB: { originalColor: string, isSaved: boolean };
   private circleFillStyleRGB: { originalColor: string, isSaved: boolean };
   private svgCountryStyleRGB: { originalColor: string, isSaved: boolean };
+  private svgRoomStyleRGB: { originalColor: string, isSaved: boolean };
 
   constructor() {
     this.isShowSvg = false;
@@ -16,6 +17,7 @@ class SvgTest {
     this.circleFillAttrRGB = { originalColor: '', isSaved: false };
     this.circleFillStyleRGB = { originalColor: '', isSaved: false };
     this.svgCountryStyleRGB = { originalColor: '', isSaved: false };
+    this.svgRoomStyleRGB = { originalColor: '', isSaved: false };
   }
 
   setDefaults() {
@@ -165,6 +167,32 @@ class SvgTest {
     // alert("You clicked the circle");
   }
 
+  svgRoom(objectId: string) {
+    const thisSvg = document.getElementById(objectId);
+    if (thisSvg) {
+      const fillPoly = thisSvg.querySelector('.room-fill');
+      if (fillPoly) {
+        const styleFillColor = getComputedStyle(fillPoly).fill;
+        let fillColor = fillPoly.getAttribute('fill');
+        // Get original color and save it.
+        if (!this.svgRoomStyleRGB.isSaved) {
+          this.svgRoomStyleRGB = {
+            originalColor: styleFillColor ?? '',
+            isSaved: true
+          };
+        }
+        if (styleFillColor == this.svgRoomStyleRGB.originalColor) {
+          // fillPoly.style.fill = 'blue';
+          fillPoly.setAttribute('fill', 'blue');
+        } else {
+          // fillPoly.style.fill = this.svgRoomStyleRGB.originalColor;
+          thisSvg.setAttribute('fill', this.svgRoomStyleRGB.originalColor);
+        }
+      }
+    }
+    // alert("You clicked the circle");
+  }
+
 }
 
   /**
@@ -190,6 +218,13 @@ document.getElementById('hexagon2')?.addEventListener('click', function() {
 document.getElementById('hexagon3')?.addEventListener('click', function() {
   svgtest.svgHexagon('hexagon3')
 });
+
+// Room layout
+document.getElementById('Room1')?.addEventListener('click', function() {
+  svgtest.svgRoom('Room1')
+});
+
+// Map of Africa
 document.getElementById('Marokko')?.addEventListener('click', function() {
   svgtest.svgCountryStyle('Marokko')
 });
