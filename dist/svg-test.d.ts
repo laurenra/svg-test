@@ -1,12 +1,16 @@
 declare class SvgTest {
     private isShowSvg;
     private fileLocation;
+    private circleFillAttrRGB;
+    private circleFillStyleRGB;
+    private svgCountryStyleRGB;
     constructor();
     setDefaults(): void;
-    svgCircle(): void;
+    svgCircleFillAttr(objectId: string): void;
+    svgCircleFillStyle(objectId: string): void;
     svgTriangle(): void;
     svgHexagon(objectId: string): void;
     svgStar(): void;
-    svgCountry(countryId: string): void;
+    svgCountryStyle(objectId: string): void;
 }
 declare const svgtest: SvgTest;
