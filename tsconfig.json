@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./src/js",
+    "outDir": "./dist",
     "module": "es2015",
     "target": "es2016",
     "sourceMap": true,
