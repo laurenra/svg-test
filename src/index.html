@@ -28,11 +28,25 @@
   <div class="container-main">
     <div class="svg-area">
 
-      <!-- SVG Circle -->
+      <!-- SVG Circle with fill attribute -->
       <svg width="140" height="140" xmlns="http://www.w3.org/2000/svg">
-        <!--    <circle id="circle1" cx="50" cy="50" r="25" style="fill:red;" onclick="svgtest.svgAlertCircle()" />-->
-<!--        <circle id="circle1" cx="60" cy="60" r="50" fill="red" onclick="svgtest.svgCircle()" />-->
-        <circle id="circle1" cx="60" cy="60" r="50" fill="red" />
+        <!--    <circle id="circleFillAttr" cx="60" cy="60" r="50" style="fill:red;" onclick="svgtest.svgAlertCircle()" />-->
+<!--        <circle id="circleFillAttr" cx="60" cy="60" r="50" fill="red" onclick="svgtest.svgCircle()" />-->
+<!--        <circle id="circleFillAttr" cx="60" cy="60" r="50" fill="red" />-->
+<!--        <circle id="circleFillAttr" cx="60" cy="60" r="50" fill="#ff0000" />-->
+        <circle id="circleFillAttr" cx="60" cy="60" r="50" fill="rgb(255,0,0)" />
+        Sorry, your browser does not support inline SVG.
+      </svg>
+
+      <!-- SVG Circle with fill style -->
+      <svg width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" style="fill:orange;" />-->
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="orange" style="fill:yellow;" />-->
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="orange" onclick="svgtest.svgCircle()" />-->
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="lime" />-->
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="#00ff00" />-->
+        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="rgb(0, 255, 0)" />
+<!--        <circle id="circleFillStyle" cx="60" cy="60" r="50" fill="rgba(0, 255, 0, 0.5)" />-->
         Sorry, your browser does not support inline SVG.
       </svg>
 
@@ -60,7 +74,7 @@
     </div>
 
     <div>
-      <span> Tour Afrique </span>
+      <span>Click on Morocco (Marokko), colored in light blue</span>
       <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:cc="http://creativecommons.org/ns#"
@@ -388,7 +402,7 @@
               inkscape:connector-curvature="0"
               d="m 882.7691,801.72186 9.959,32.83 -2.939,29.147 c 5.91,5.324 11.79,9.645 20.084,23.483 1.041,1.737 2.131,6.079 1.764,9.561 l -3.609,15.409 -9.016,3.926 0.699,13.48 -4.787,0.073 c 2.466,-6.329 0.105,-5.147 -0.958,-5.531 -6.536,-4.128 -8.985,-10.204 -10.188,-15.653 5.347,-8.23 5.03,-14.844 4.42,-21.206 l -8.847,-1.636 c -6.83,1.669 -8.158,-0.837 -8.817,-3.115 -3.706,-8.681 -5.409,-5.336 -6.769,-5.923 l -5.276,-7.262 9.254,-17.156 7.219,-0.811 -4.913,-6.4 4.302,-22.312 4.096,-3.021 -11.83,-23.379 c 3.439,3.017 7.242,4.044 16.152,5.496 z"
               id="Malawi" /><path
-              fill="blue" style="stroke:#000000;stroke-linecap:round"
+              style="fill:lightblue;stroke:#000000;stroke-linecap:round"
               inkscape:connector-curvature="0"
               d="m 198.9331,157.45086 2.576,-19.744 15.475,-7.987 3.494,0.999 5.491,-4.493 9.125,0.66 0.499,-4.353 c 19.079,0.932 22.947,-4.17 26.317,-9.286 l 15.974,-6.489 h 5.99 l -2.995,-3.993 0.998,-3.693 -0.499,-4.793 c 6.247,-0.817 13.952,0.185 13.998,-6.35 l 25.937,0.359 3.494,-7.986 c -4.954,-1.818 -5.84,-8.981 -5.177,-16.593 0.493,-5.651 0.046,-18.509 0.046,-18.509 -1.71,-2.063 -3.84,-4.006 -4.332,-6.97 -4.159,-0.767 -9.265,-0.859 -11.004,-3.354 -6.038,-1.037 -12.02,-1.588 -17.419,-1.045 -9.885,0.994 -13.953,-2.567 -18.022,-11.934 -9.52,-0.621 -19.613,19.836 -26.956,29.95 -17.757,4.938 -30.607,12.943 -39.436,23.462 1.18,4.276 -0.893,5.923 -5.202,8.746 -2.785,1.825 -12.583,17.465 -9.273,26.196 0.041,6.822 -5.276,18.192 -20.557,25.758 0,0 -7.125,6.659 -18.394,10.336 -4.754,1.551 -15.776,2.787 -19.111,5.862 l 68.963,5.244 z"
               id="Marokko" /><path
@@ -476,6 +490,8 @@
       </svg>
     </div>
   </div>
+
+  <script src="js/svg-test.js"></script>
 
 </body>
 

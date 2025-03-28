@@ -113,6 +113,64 @@ Tutorial: [Deploying to GitHub Pages using gh-pages](https://dev.to/scc33/deploy
 
 ## Troubleshooting
 
+### Fill style versus fill attribute
+
+**Fill style**
+
+```javascript
+<circle id="circleFillStyle" cx="60" cy="60" r="50" style="fill:lime;" />
+```
+or
+
+```javascript
+<circle id="circleFillStyle" cx="60" cy="60" r="50" />
+```
+with this in the CSS style file:
+```javascript
+
+main.css
+#circleFillStyle {
+    fill: lime;
+}
+```
+**Fill attribute**
+
+```javascript
+<circle id="circleFillStyle" cx="60" cy="60" r="50" fill="lime" />
+```
+
+**Color**
+
+Color can be set several ways. For example, all of the following generate the 
+same green color:
+
+```javascript
+<circle id="circleFillStyle" cx="60" cy="60" r="50" fill="lime" />
+<circle id="circleFillStyle" cx="60" cy="60" r="50" fill="#00ff00" />
+<circle id="circleFillStyle" cx="60" cy="60" r="50" fill="rgb(0, 255, 0)" />
+<circle id="circleFillStyle" cx="60" cy="60" r="50" fill="rgba(0, 255, 0, 1)" />
+
+```
+
+See [CSS color names](https://www.w3schools.com/cssref/css_colors.php) for all 
+the named CSS colors.
+
+When fill color is set as a fill style (rather than a fill attribute):
+1. element.getAttribute('fill') will return a null.
+2. getComputedStle(element).fill will return the resolved (computed)
+   rgb() or rgba() value. If fill: red or fill: #ff0000 or
+   fill: rgb(255, 0, 0), this is always resolved to rgb(255, 0, 0).
+3. You can set the style with a named color (red), hex color (#ff0000),
+   or an rgb() or rgba() color like rgb(255, 0, 0) or rgba(255, 0, 0, 1)
+   using element.style.fill.
+4. When both a fill style and a fill attribute are defined for an
+   element, the fill style is used because it has greater specificity.
+5. When a fill style is defined in the element and in a CSS file for
+   that element ID, the fill style in the element is used because it has
+   greater specificity than the one in the CSS file.
+
+
+
 ### Webpack
 See also:
 
