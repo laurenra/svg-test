@@ -43,6 +43,18 @@
   line-height: 90pt;
 }
 
+/*#circleFillStyle {*/
+/*  border: 1px solid blue;*/
+/*}*/
+
+/*
+ * Country styles
+ */
+
+#Marokko {
+  fill: darkmagenta;
+}
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
