@@ -17,6 +17,10 @@
   /*align-items: center;*/
 }
 
+.section-title {
+  padding: 20px 20px;
+}
+
 .svg-area {
   border: 3px solid black;
   display: flex;
@@ -43,14 +47,60 @@
   line-height: 90pt;
 }
 
-/*#circleFillStyle {*/
-/*  border: 1px solid blue;*/
-/*}*/
+/*
+ * Floor layout styles
+ */
+.outer-walls-stroke {
+  stroke: black;
+  fill: pink;
+}
+.outer-walls-fill {
+  stroke: black;
+  fill: white;
+}
+
+.room-stroke {
+  stroke: black;
+  fill: green;
+}
+.room-fill {
+  stroke: black;
+  fill: lightcyan;
+}
+
+/*
+ * Beckham lodge floor layout
+ */
+
+.area-utility {
+  fill: #ccc;
+}
+
+.name-room {
+  font-family: ArialMT, Arial;
+  font-size: 24px;
+}
+
+.area-other {
+  fill: #ffc;
+}
+
+.area-room {
+  /*fill: #cfc;*/
+  /*fill: rgb(204, 255, 204);*/
+  fill: white;
+}
+
+.wall-stroke {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+}
 
 /*
  * Country styles
  */
-
 #Marokko {
   fill: darkmagenta;
 }
