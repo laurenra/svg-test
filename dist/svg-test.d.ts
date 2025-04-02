@@ -5,6 +5,7 @@ declare class SvgTest {
     private circleFillStyleRGB;
     private svgCountryStyleRGB;
     private svgRoomStyleRGB;
+    private svgBeckhamRoomStyleRGB;
     constructor();
     setDefaults(): void;
     svgCircleFillAttr(objectId: string): void;
@@ -14,5 +15,6 @@ declare class SvgTest {
     svgStar(): void;
     svgCountryStyle(objectId: string): void;
     svgRoom(objectId: string): void;
+    svgBeckhamRoom(objectId: string): void;
 }
 declare const svgtest: SvgTest;

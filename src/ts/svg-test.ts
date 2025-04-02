@@ -10,6 +10,7 @@ class SvgTest {
   private circleFillStyleRGB: { originalColor: string, isSaved: boolean };
   private svgCountryStyleRGB: { originalColor: string, isSaved: boolean };
   private svgRoomStyleRGB: { originalColor: string, isSaved: boolean };
+  private svgBeckhamRoomStyleRGB: { originalColor: string, isSaved: boolean };
 
   constructor() {
     this.isShowSvg = false;
@@ -18,6 +19,7 @@ class SvgTest {
     this.circleFillStyleRGB = { originalColor: '', isSaved: false };
     this.svgCountryStyleRGB = { originalColor: '', isSaved: false };
     this.svgRoomStyleRGB = { originalColor: '', isSaved: false };
+    this.svgBeckhamRoomStyleRGB = { originalColor: '', isSaved: false };
   }
 
   setDefaults() {
@@ -193,6 +195,29 @@ class SvgTest {
     // alert("You clicked the circle");
   }
 
+  svgBeckhamRoom(objectId: string) {
+    const thisSvg = document.getElementById(objectId);
+    if (thisSvg) {
+      const styleFillColor = getComputedStyle(thisSvg).fill;
+      let fillColor = thisSvg.getAttribute('fill');
+      // Get original color and save it.
+      if (!this.svgBeckhamRoomStyleRGB.isSaved) {
+        this.svgBeckhamRoomStyleRGB = {
+          originalColor: styleFillColor ?? '',
+          isSaved: true
+        };
+      }
+      if (styleFillColor == this.svgBeckhamRoomStyleRGB.originalColor) {
+        thisSvg.style.fill = 'rgb(204, 255, 204)'; // lighter than pale green
+        // thisSvg.setAttribute('fill', 'blue');
+      } else {
+        thisSvg.style.fill = this.svgBeckhamRoomStyleRGB.originalColor;
+        // thisSvg.setAttribute('fill', this.svgBeckhamRoomStyleRGB.originalColor);
+      }
+    }
+    // alert("You clicked the circle");
+  }
+
 }
 
   /**
@@ -223,6 +248,15 @@ document.getElementById('hexagon3')?.addEventListener('click', function() {
 document.getElementById('Room1')?.addEventListener('click', function() {
   svgtest.svgRoom('Room1')
 });
+
+// Beckham lodge layout
+document.getElementById('room-large-1')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-1')
+});
+document.getElementById('room-large-2')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-2')
+});
+
 
 // Map of Africa
 document.getElementById('Marokko')?.addEventListener('click', function() {

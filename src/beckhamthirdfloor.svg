@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620.24 1080">
+  <defs>
+    <style>
+      .area-utility {
+        fill: #ccc;
+      }
+
+      .name-room {
+        font-family: ArialMT, Arial;
+        font-size: 24px;
+      }
+
+      .area-other {
+        fill: #ffc;
+      }
+
+      .area-room {
+        fill: #cfc;
+      }
+
+      .wall-stroke {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="areas-other-rooms">
+    <rect id="area-stairs" class="area-utility" x="396" y="438" width="150" height="174"/>
+    <rect id="area-storage" class="area-utility" x="666" y="672" width="240" height="54"/>
+    <rect id="area-kitchen" class="area-other" x="852" y="462" width="150" height="150"/>
+    <rect id="area-furnished-lobby" class="area-other" x="546" y="132" width="306" height="480"/>
+  </g>
+  <g id="areas-rooms">
+    <rect id="room-large-1" class="area-room" x="306" y="132" width="240" height="258"/>
+    <rect id="room-large-2" class="area-room" x="852" y="132" width="240" height="258"/>
+    <polyline id="room-large-3" class="area-room" points="1272 312 1410 312 1410 354 1506 354 1506 612 1272 612 1272 312"/>
+    <polyline id="room-large-4" class="area-room" points="1044 672 1278 672 1278 954 1152 954 1152 924 1044 924 1044 672"/>
+    <polygon id="room-large-5" class="area-room" points="810 726 906 726 906 672 1044 672 1044 996 810 996 810 726"/>
+    <polyline id="room-large-6" class="area-room" points="576 672 666 672 666 726 810 726 810 996 684 996 684 972 576 972 576 672"/>
+    <polyline id="room-large-7" class="area-room" points="342 672 576 672 576 930 468 930 468 954 342 954 342 672"/>
+    <polyline id="room-small-1" class="area-room" points="114 348 252 348 252 612 114 612 114 348"/>
+    <polyline id="room-small-2" class="area-room" points="252 348 306 348 306 390 396 390 396 612 252 612 252 348"/>
+    <polyline id="room-small-3" class="area-room" points="1002 390 1092 390 1092 348 1146 348 1146 612 1002 612 1002 390"/>
+    <polyline id="room-small-4" class="area-room" points="1146 348 1272 348 1272 612 1146 612 1146 348"/>
+    <polyline id="room-small-5" class="area-room" points="1278 672 1506 672 1506 924 1404 924 1404 954 1278 954 1278 672"/>
+    <polyline id="room-small-6" class="area-room" points="114 672 342 672 342 954 222 954 222 792 114 792 114 672"/>
+  </g>
+  <g id="walls">
+    <polyline id="walls-connected" class="wall-stroke" points="726 858 810 858 810 996 684 996 684 858 696 858 672 858 684 858 684 972 576 972 576 858 642 858 576 858 576 672 624 672 456 672 576 672 576 930 468 930 468 816 468 954 342 954 342 672 420 672 420 768 420 672 270 672 270 768 270 672 342 672 342 816 420 816 270 816 342 816 342 954 222 954 222 792 114 792 114 672 228 672 114 672 114 612 138 612 114 612 114 348 252 348 252 612 174 612 330 612 252 612 252 348 306 348 306 390 396 390 396 612 366 612 456 612 396 612 396 438 504 438 504 612 546 612 546 438 396 438 396 390 408 390 306 390 306 132 414 132 414 252 402 252 426 252 414 252 414 132 546 132 546 390 468 390 546 390 546 252 456 252 546 252 546 132 852 132 528 132 528 18 870 18 870 132 852 132 852 390 918 390 918 300 918 390 930 390 852 390 852 252 936 252 852 252 852 132 984 132 984 252 972 252 996 252 984 252 984 132 1092 132 1092 252 1026 252 1092 252 1092 390 1002 390 1002 462 852 462 852 522 852 432 852 462 1002 462 1002 612 852 612 852 558 852 612 1026 612 1002 612 1002 510 1026 510 1002 510 1002 390 972 390 1092 390 1092 348 1146 348 1146 612 1062 612 1218 612 1146 612 1146 510 1068 510 1146 510 1200 510 1146 510 1146 348 1272 348 1272 510 1254 510 1272 510 1272 612 1254 612 1344 612 1344 522 1344 612 1356 612 1272 612 1272 474 1362 474 1272 474 1272 312 1410 312 1410 474 1422 474 1410 474 1410 354 1506 354 1506 474 1464 474 1506 474 1506 612 1392 612 1506 612 1506 672 1392 672 1506 672 1506 924 1404 924 1404 810 1404 954 1278 954 1278 810 1356 810 1278 810 1278 756 1314 756 1278 756 1278 672 1344 672 1344 768 1344 672 1356 672 1206 672 1206 768 1206 672 1194 672 1278 672 1278 756 1242 756 1278 756 1278 810 1200 810 1278 810 1278 954 1152 954 1152 810 1152 924 1044 924 1044 804 1044 846 1002 846 1044 846 1044 996 960 996 960 846 972 846 948 846 960 846 960 996 810 996 810 846 912 846 810 846 810 726 906 726 906 804 906 672 912 672 660 672 666 672 666 726 810 726"/>
+    <polyline id="walls-float" class="wall-stroke" points="948 672 1044 672 1044 762 1044 672 1164 672"/>
+  </g>
+  <g id="names-rooms">
+    <text id="name-kitchen" class="name-room" transform="translate(876 534)"><tspan x="0" y="0">KITCHEN</tspan></text>
+    <text id="name-stairs" class="name-room" transform="translate(408 534)"><tspan x="0" y="0">STAIRS</tspan></text>
+    <text id="name-lobby" class="name-room" transform="translate(632 318)"><tspan x="0" y="0">FURNISHED</tspan><tspan x="29.98" y="28.8">LOBBY</tspan></text>
+    <text id="name-balcony" class="name-room" transform="translate(642 84)"><tspan x="0" y="0">BALCONY</tspan></text>
+    <text id="name-large-1" class="name-room" transform="translate(372 318)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-2" class="name-room" transform="translate(948 318)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-3" class="name-room" transform="translate(1368 534)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-4" class="name-room" transform="translate(1098 738)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-5" class="name-room" transform="translate(924 804)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-6" class="name-room" transform="translate(654 804)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-large-7" class="name-room" transform="translate(444 738)"><tspan x="0" y="0">LARGE</tspan></text>
+    <text id="name-small-1" class="name-room" transform="translate(144 534)"><tspan x="0" y="0">SMALL</tspan></text>
+    <text id="name-small-2" class="name-room" transform="translate(294 534)"><tspan x="0" y="0">SMALL</tspan></text>
+    <text id="name-small-3" class="name-room" transform="translate(1032 462)"><tspan x="0" y="0">SMALL</tspan></text>
+    <text id="name-small-4" class="name-room" transform="translate(1164 462)"><tspan x="0" y="0">SMALL</tspan></text>
+    <text id="name-small-5" class="name-room" transform="translate(1392 738)"><tspan x="0" y="0">SMALL</tspan></text>
+    <text id="name-small-6" class="name-room" transform="translate(162 738)"><tspan x="0" y="0">SMALL</tspan></text>
+  </g>
+</svg>
