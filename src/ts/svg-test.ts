@@ -221,6 +221,10 @@ class SvgTest {
   svgBeckhamMouseOver(objectId: string) {
     const thisSvg = document.getElementById(objectId);
     if (thisSvg) {
+      const thisText = document.getElementById("name-large-1");
+      if (thisText) {
+        thisText.style.display = "none";
+      }
       const thisPopup = document.getElementById("name-large-1-popup");
       if (thisPopup) {
         thisPopup.style.display = "block"
@@ -232,6 +236,10 @@ class SvgTest {
   svgBeckhamMouseOut(objectId: string) {
     const thisSvg = document.getElementById(objectId);
     if (thisSvg) {
+      const thisText = document.getElementById("name-large-1");
+      if (thisText) {
+        thisText.style.display = "block";
+      }
       const thisPopup = document.getElementById("name-large-1-popup");
       if (thisPopup) {
         thisPopup.style.display = "none"

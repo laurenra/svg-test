@@ -87,6 +87,11 @@
   display: none;
 }
 
+.area-room-popup {
+  fill: aliceblue;
+  display: none;
+}
+
 .area-other {
   fill: #ffc;
 }
