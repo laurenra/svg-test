@@ -16,5 +16,6 @@ declare class SvgTest {
     svgCountryStyle(objectId: string): void;
     svgRoom(objectId: string): void;
     svgBeckhamRoom(objectId: string): void;
+    svgBeckhamMouseOver(objectId: string): void;
 }
 declare const svgtest: SvgTest;
