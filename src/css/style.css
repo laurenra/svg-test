@@ -81,6 +81,12 @@
   font-size: 24px;
 }
 
+.name-room-popup {
+  font-family: ArialMT, Arial;
+  font-size: 16px;
+  display: none;
+}
+
 .area-other {
   fill: #ffc;
 }

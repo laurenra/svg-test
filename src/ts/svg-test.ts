@@ -218,6 +218,28 @@ class SvgTest {
     // alert("You clicked the circle");
   }
 
+  svgBeckhamMouseOver(objectId: string) {
+    const thisSvg = document.getElementById(objectId);
+    if (thisSvg) {
+      const thisPopup = document.getElementById("name-large-1-popup");
+      if (thisPopup) {
+        thisPopup.style.display = "block"
+      }
+    }
+    // alert("You clicked the circle");
+  }
+
+  svgBeckhamMouseOut(objectId: string) {
+    const thisSvg = document.getElementById(objectId);
+    if (thisSvg) {
+      const thisPopup = document.getElementById("name-large-1-popup");
+      if (thisPopup) {
+        thisPopup.style.display = "none"
+      }
+    }
+    // alert("You clicked the circle");
+  }
+
 }
 
   /**
@@ -255,6 +277,13 @@ document.getElementById('room-large-1')?.addEventListener('click', function() {
 });
 document.getElementById('room-large-2')?.addEventListener('click', function() {
   svgtest.svgBeckhamRoom('room-large-2')
+});
+
+document.getElementById('room-large-1')?.addEventListener('mouseover', function() {
+  svgtest.svgBeckhamMouseOver('room-large-1')
+});
+document.getElementById('room-large-1')?.addEventListener('mouseout', function() {
+  svgtest.svgBeckhamMouseOut('room-large-1')
 });
 
 
