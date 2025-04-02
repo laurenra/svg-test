@@ -17,5 +17,6 @@ declare class SvgTest {
     svgRoom(objectId: string): void;
     svgBeckhamRoom(objectId: string): void;
     svgBeckhamMouseOver(objectId: string): void;
+    svgBeckhamMouseOut(objectId: string): void;
 }
 declare const svgtest: SvgTest;
