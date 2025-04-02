@@ -79,12 +79,12 @@
 .name-room {
   font-family: ArialMT, Arial;
   font-size: 16px;
-  display: none;
 }
 
 .name-room-popup {
   font-family: ArialMT, Arial;
   font-size: 24px;
+  display: none;
 }
 
 .area-other {
