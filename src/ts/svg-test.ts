@@ -2,6 +2,30 @@
  * SVG click handlers
  */
 
+enum Lodge {
+  Aspen = 'Aspen Lodge',
+  Beckham = 'Beckham Lodge',
+  Family = 'Family Lodge'
+}
+
+enum Wing {
+  East = 'East',
+  West = 'West'
+}
+
+enum Floor {
+  Main = 'Main Floor',
+  Upper = 'Upper Floor',
+  Floor1 = 'Floor 1',
+  Floor2 = 'Floor 2',
+  Floor3 = 'Floor 3'
+}
+
+interface SvgState {
+  id: string,
+  color: string
+}
+
 class SvgTest {
 
   private isShowSvg: boolean;
@@ -11,6 +35,17 @@ class SvgTest {
   private svgCountryStyleRGB: { originalColor: string, isSaved: boolean };
   private svgRoomStyleRGB: { originalColor: string, isSaved: boolean };
   private svgBeckhamRoomStyleRGB: { originalColor: string, isSaved: boolean };
+  private allSvgState: SvgState[];
+
+  // private interface statusRoom: {
+  //   lodge: Lodge,
+  //   wing: Wing,
+  //   floor: Floor,
+  //   room: number,
+  //   areaName: string
+  // }
+
+  // private statusAllLodges: object[];
 
   constructor() {
     this.isShowSvg = false;
@@ -20,6 +55,7 @@ class SvgTest {
     this.svgCountryStyleRGB = { originalColor: '', isSaved: false };
     this.svgRoomStyleRGB = { originalColor: '', isSaved: false };
     this.svgBeckhamRoomStyleRGB = { originalColor: '', isSaved: false };
+    this.allSvgState = new Array<SvgState>;
   }
 
   setDefaults() {
@@ -208,6 +244,40 @@ class SvgTest {
         };
       }
       if (styleFillColor == this.svgBeckhamRoomStyleRGB.originalColor) {
+        // thisSvg.style.fill = 'rgb(204, 255, 204)'; // lighter than pale green
+        thisSvg.style.fill = 'rgb(255, 180, 180)'; // light red
+        // thisSvg.setAttribute('fill', 'blue');
+      } else {
+        thisSvg.style.fill = this.svgBeckhamRoomStyleRGB.originalColor;
+        // thisSvg.setAttribute('fill', this.svgBeckhamRoomStyleRGB.originalColor);
+      }
+    }
+    // alert("You clicked the circle");
+  }
+
+
+  /**
+   * Get style(s) of SVG, and toggle them
+   *
+   * 1. Save original style
+   * 2. Set style to new value
+   * 3. Reset style to original
+   *
+   * @param objectId
+   */
+  svgArea(objectId: string) {
+    const thisSvg = document.getElementById(objectId);
+    if (thisSvg) {
+      const styleFillColor = getComputedStyle(thisSvg).fill;
+      let fillColor = thisSvg.getAttribute('fill');
+      // Get original color and save it.
+      if (!this.svgBeckhamRoomStyleRGB.isSaved) {
+        this.svgBeckhamRoomStyleRGB = {
+          originalColor: styleFillColor ?? '',
+          isSaved: true
+        };
+      }
+      if (styleFillColor == this.svgBeckhamRoomStyleRGB.originalColor) {
         thisSvg.style.fill = 'rgb(204, 255, 204)'; // lighter than pale green
         // thisSvg.setAttribute('fill', 'blue');
       } else {
@@ -279,17 +349,54 @@ document.getElementById('Room1')?.addEventListener('click', function() {
   svgtest.svgRoom('Room1')
 });
 
-// Beckham lodge layout
+// Beckham lodge layout click to set/unset color
 document.getElementById('room-large-1')?.addEventListener('click', function() {
   svgtest.svgBeckhamRoom('room-large-1')
 });
 document.getElementById('room-large-2')?.addEventListener('click', function() {
   svgtest.svgBeckhamRoom('room-large-2')
 });
+document.getElementById('room-large-3')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-3')
+});
+document.getElementById('room-large-4')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-4')
+});
+document.getElementById('room-large-5')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-5')
+});
+document.getElementById('room-large-6')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-6')
+});
+document.getElementById('room-large-7')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-large-7')
+});
 
+document.getElementById('room-small-1')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-1')
+});
+document.getElementById('room-small-2')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-2')
+});
+document.getElementById('room-small-3')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-3')
+});
+document.getElementById('room-small-4')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-4')
+});
+document.getElementById('room-small-5')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-5')
+});
+document.getElementById('room-small-6')?.addEventListener('click', function() {
+  svgtest.svgBeckhamRoom('room-small-6')
+});
+
+// Beckham lodge layout mouseover
 document.getElementById('room-large-1')?.addEventListener('mouseover', function() {
   svgtest.svgBeckhamMouseOver('room-large-1')
 });
+
+// Beckham lodge layout mouseout
 document.getElementById('room-large-1')?.addEventListener('mouseout', function() {
   svgtest.svgBeckhamMouseOut('room-large-1')
 });

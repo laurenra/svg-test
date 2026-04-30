@@ -1,3 +1,23 @@
+declare enum Lodge {
+    Aspen = "Aspen Lodge",
+    Beckham = "Beckham Lodge",
+    Family = "Family Lodge"
+}
+declare enum Wing {
+    East = "East",
+    West = "West"
+}
+declare enum Floor {
+    Main = "Main Floor",
+    Upper = "Upper Floor",
+    Floor1 = "Floor 1",
+    Floor2 = "Floor 2",
+    Floor3 = "Floor 3"
+}
+interface SvgState {
+    id: string;
+    color: string;
+}
 declare class SvgTest {
     private isShowSvg;
     private fileLocation;
@@ -6,6 +26,7 @@ declare class SvgTest {
     private svgCountryStyleRGB;
     private svgRoomStyleRGB;
     private svgBeckhamRoomStyleRGB;
+    private allSvgState;
     constructor();
     setDefaults(): void;
     svgCircleFillAttr(objectId: string): void;
@@ -16,6 +37,7 @@ declare class SvgTest {
     svgCountryStyle(objectId: string): void;
     svgRoom(objectId: string): void;
     svgBeckhamRoom(objectId: string): void;
+    svgArea(objectId: string): void;
     svgBeckhamMouseOver(objectId: string): void;
     svgBeckhamMouseOut(objectId: string): void;
 }
