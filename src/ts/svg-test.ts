@@ -246,6 +246,7 @@ class SvgTest {
       if (styleFillColor == this.svgBeckhamRoomStyleRGB.originalColor) {
         // thisSvg.style.fill = 'rgb(204, 255, 204)'; // lighter than pale green
         thisSvg.style.fill = 'rgb(255, 180, 180)'; // light red
+        // thisSvg.style.fill = 'rgb(208, 208, 208)'; // gray
         // thisSvg.setAttribute('fill', 'blue');
       } else {
         thisSvg.style.fill = this.svgBeckhamRoomStyleRGB.originalColor;
